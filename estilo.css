@@ -1,0 +1,389 @@
+/* CARREGANDO FONTES */
+@font-face {
+	font-family: 'Montserrat';
+	src: url('fonts/Montserrat-Regular.ttf') format('truetype');
+}
+@font-face {
+	font-family: 'Montserrat Hairline';
+	src: url('fonts/montserrat-hairline.ttf') format('truetype'); 
+}
+
+body {
+	margin: 0px;
+	font-family: "Montserrat";
+	background-color: #fff8e6;
+}
+
+h1{
+	font-family: 'Montserrat Hairline';
+	font-size: 50px;
+}
+
+/* MENU LATERAL*/
+
+#menu_lateral{
+	background-color: #70172a;
+	width: 25%;
+	height: 100%;
+	text-align: center;
+	color: white;
+	position: fixed;
+}
+
+#menu_lateral img{
+	width: 60%;
+	border-radius: 100%;
+	padding: 10% 20%;
+}
+
+#menu_lateral p{
+	text-align: left;
+	padding: 0px 30px;
+}
+
+#menu_lateral #email{
+	text-align: center;
+}
+
+/* BOTÃO REDONDO */
+
+.botao_circulo{
+	display: inline-block;
+	background-repeat: no-repeat;
+	background-color: #e72f57;
+	background-position: center; 
+	border-radius: 100%;
+	cursor:pointer;
+	border: none;
+	width: 50px;
+	height: 50px;
+}
+
+/* IMAGENS DOS BOTÕES REDONDOS */
+
+#facebook {
+	background-image:url('imagens/facebook.png');
+}
+
+#instagram {
+	background-image:url('imagens/instagram.png');
+}
+
+#home {
+	background-image:url('imagens/home.png');
+	float: right;
+	margin-top: 20px;
+	margin-right: 20px !important; 
+}
+
+/* CORPO DA PÁGINA DE HOME */
+
+.titulo_corpo {
+	background-color: white;
+	display: block;
+}
+
+.titulo_corpo h1 {
+	color: #70172a;
+	font-size: 50px;
+	font-family: 'Montserrat Hairline';
+	padding: 30px;
+	margin: 0px;
+	text-align: center;
+}
+
+.corpo_pagina{
+	width: 75%;
+	float: right;
+}
+
+/* MENU SUPERIOR */
+nav{
+	background-color: white;
+	height: 100px;
+	width: 100%;
+}
+
+nav #menusuperior{
+	height: 100px;
+	width: 80%;	
+	float: left;
+}
+
+
+nav #menusuperior img{
+	height: 80%;
+	border-radius: 50%;
+	margin: 10px 10px 10px 20px;
+}
+
+nav #menusuperior h1 {
+	color: #70172a;
+	font-size: 20px;
+	font-family: 'Montserrat';
+	margin: 0px;
+	position: absolute;
+	top: 40px;
+  	left: 145px;
+}
+
+nav #menusuperior hr {
+	position: absolute;
+	top: 5px;
+  	left: 120px;
+}
+
+/* HR */
+
+.vertical {
+	border-left: 6px solid #70172a;
+	height: 70px;
+	width: 0px;
+}
+
+/* TELA DE DESCRIÇÃO DO PROJETO */
+
+.img_projeto {
+	width: 30%;
+	height: auto;
+	float: left;
+	margin: 10px;
+	margin-bottom: 0px;
+	margin-right: 20px;
+}
+
+.img_projeto img{
+	width: 100%;
+}
+
+.descricao_projeto {
+	width: 98%;
+	margin: 0px;
+	text-align: justify;
+}
+
+.descricao_projeto p {
+	font-family: "Montserrat";
+	color: #70172a;
+}
+
+.descricao_projeto h1 {
+	color: #70172a;
+	font-size: 50px;
+	font-family: 'Montserrat Hairline';
+	padding: 30px;
+	margin: 0px;
+	text-align: center;
+}
+
+/* CARD DE COMENTÁRIO SOBRE O PROJETO */
+
+.card {
+	background-color: white;
+	height: auto;
+	width: 40%;
+	border-radius: 5%;
+	float: right;
+	color: #70172a;
+	padding: 20px;
+	text-align: justify;
+	margin: 20px;
+}
+
+.card img{
+	height: 130px;
+	border-radius: 50%;
+	padding: 10px;
+	float: right;
+}
+
+.card .vertical{
+	float: right;
+	height: 130px;
+	margin: 10px;
+}
+
+.card h3{
+	float: right;
+}
+
+/* MODAL */
+
+.modalDialog {
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background: rgba(0,0,0,0.8);
+	z-index: 99999;
+	opacity:0;
+	-webkit-transition: opacity 400ms ease-in;
+	-moz-transition: opacity 400ms ease-in;
+	transition: opacity 400ms ease-in;
+	pointer-events: none;
+	height: auto;
+}
+
+.modalDialog:target {
+	opacity:1;
+	pointer-events: auto;
+}
+
+.modalDialog > div {
+	width: 80%;
+	position: relative;
+	margin: 10px auto;
+	padding: 5px 20px 13px 20px;
+	border-radius: 10px;
+	background: #70172a;
+	height: auto;
+}
+
+.closeModal {
+	background-color: none;
+	color: #fff;
+	background-position: center; 
+	position: absolute;
+	right: 15px;
+	top: 15px;
+	border-radius: 100%;
+	cursor:pointer;
+	border: none;
+	width: 50px;
+	height: 50px;
+	background-image:url('imagens/close.png');
+	background-repeat: no-repeat;
+}
+
+.modalDialog img{
+	width: 30%;
+	float: left;
+	border-radius: 100%;
+	height: auto;
+	padding: 20px;
+	margin-right: 30px;
+}
+
+.descricao_perfil{
+	margin: 20px;
+	margin-left: 30px;
+	color: #fff;
+	height: 100%;
+}
+
+/* LINKS */
+a {
+	color: white;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #e72f57;
+}
+
+/* MODAL DE CONTATO*/
+
+#contato_modal {
+	color: #fff;
+	text-align: center;
+}
+
+/* FORM */
+#form{
+	padding: auto;
+	display:inline-block
+	margin: auto;
+	width: 100%
+}
+
+.caixa_texto {
+	font-family: 'Montserrat';
+	background-color: #000;
+	color: #fff;
+	border: none;
+	width: 50%;
+	margin: 5px;
+}
+
+.tamanho-caixa{
+	height: 30px;
+}
+
+input[type=text], textarea {
+	font-family: 'Montserrat';
+	width: 60%;
+	padding: 15px 20px;
+	margin: 8px 0;
+	box-sizing: border-box;
+	border: none;
+	border-bottom: 5px solid #70172a;
+	-webkit-transition: 0.5s;
+	transition: 0.5s;
+	outline: none;
+	background-color: #fff8e6;
+	color: #70172a;
+	resize: none;
+
+}
+
+input[type=text]:focus , textarea:focus {
+	border-bottom: 5px solid #e72f57;
+}
+
+input[type=text]::placeholder, textarea::placeholder {
+	color: #70172a;
+	opacity: 1; 
+}
+
+.botao_form{
+	display: inline-block;
+	background-repeat: no-repeat;
+	background-color: #e72f57;
+	color: white;
+	border-radius: 30px;
+	cursor:pointer;
+	border: none;
+	width: 100px;
+	height: 30px;
+	padding: 0px 0px 0px 15px;
+	font-family: 'Montserrat';
+}
+
+#enviar{
+	background-position: 10px; 
+	background-size: 20px;
+	background-image:url('imagens/send-mail.png');
+}
+
+#limpar{
+	background-position: 12px; 
+	background-size: 15px;
+	background-image:url('imagens/trash.png');
+}
+
+/* BOTÃO DE VER BLOG */
+
+.button {
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    margin-left: 20%;
+}
+
+.button1 {
+    color: #e72f57; 
+    background-color: white; 
+    border: 2px solid #e72f57;
+}
+
+.button1:hover {
+    background-color: #e72f57;
+    color: white;
+}

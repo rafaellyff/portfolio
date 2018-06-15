@@ -1,0 +1,128 @@
+@media screen and (max-width: 900px) {
+	
+	#menu_lateral{
+		width: 100%;
+		height: auto;
+		position: relative;
+		top: -20px;
+		margin:0 auto;
+	}
+	
+	#menu_lateral img{
+		width: 30%;
+		padding: 30px;
+		float: left;
+	}
+
+	#menu_lateral h2{
+		padding: 20px;
+	}
+	
+	#menu_lateral p{
+		text-align: left;
+	}
+
+	.corpo_pagina{
+		position: relative;
+		top: -32px;
+		width: 100%;
+	}
+
+	.card{
+		width: 90%;
+		margin-right: 0px;
+	}
+
+	.modalDialog img{
+		display: none;
+	}
+
+	.img_projeto{
+		width: 90%;
+		margin: 5%;	
+	}
+	
+	.descricao_projeto{
+		width: 90%;
+		margin: 20px;	
+	}
+	
+	.button {
+    width: 100%;
+    margin-left: 0px;
+	}
+
+	.descricao_perfil {
+		font-size: 13px;
+		margin: 10px;
+		margin-left: 0px;
+	}
+}
+
+@media screen and (max-width: 400px) and (min-width: 270px)  {
+	
+	#menusuperior img, #menusuperior .vertical{
+		display: none;
+	}	
+	
+	nav #menusuperior h1 {
+		position: absolute;
+		left: 5%;
+	}
+
+	nav #home {
+		position: absolute;
+		right: 0px;
+	}
+
+	.card img{
+		width: 50%;
+		height: auto;
+		border-radius: 50%;
+		padding-left:25%;
+		padding-right:25%;
+	}
+
+	.card .vertical{
+		display: none;
+	}	
+
+	.titulo_corpo h1{
+		font-size: 40px;
+	}
+
+	#menu_lateral img{
+		width: 60%;
+		padding: 10% 20%;
+	}
+
+	#contato_modal h1{
+		margin-top: 50px;
+		font-size: 40px;
+	}
+
+	#perfil h1{
+		margin-top: 50px;
+		font-size: 40px;
+	}
+
+	.descricao_projeto h1{
+		font-size: 40px;
+		text-align: center;
+		padding: 0px;
+	}
+
+	.descricao_projeto {
+		margin-left: 5%;
+	}
+
+	.descricao_perfil {
+		font-size: 12px;
+		margin: 10px;
+		margin-left: 0px;
+	}
+
+	input[type=text], textarea {
+		width: 80%;
+	}
+}
