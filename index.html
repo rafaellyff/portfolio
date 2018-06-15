@@ -5,16 +5,18 @@
 		<meta charset="utf-8">
 		<link rel="stylesheet" type="text/css" href="estilo.css">
 		<link rel="stylesheet" type="text/css" href="responsive.css">
-		<script type="text/javascript" src="js/modernizr.custom.79639.js"></script> 
 		<link rel="stylesheet" type="text/css" href="style7.css" />
+		<script type="text/javascript" src="js/modernizr.custom.79639.js"></script> 
+		<script type="text/javascript" src="js/jquery-3.3.1.min.js"></script> 
+		<script type="text/javascript" src="js/funcionalidades.js"></script> 
 	</head>
 	<body>
 		<section>
 			<div id="menu_lateral">
 				<img src="imagens/rafaelly.jpg">
-				<h2>Rafaelly Freitas</h2>
+				<h2 id="nome_menu">Rafaelly Freitas</h2>
 				<p>Olá, pode me chamar de Rafinha! Tenho 18 anos, sou Desenvolvedora Web Full Stack, atualmente, desenvolvendo em Ruby on Rails. Estou cursando Sistemas e Mídias Digitais e já tenho experiência na área de desenvolvimento.</p>
-				<a href="#perfil">Ver mais...</a><br>
+				<a href="#perfil" id="modal_contato">Ver mais...</a><br>
 				<br>
 				<a  href="https://www.facebook.com/ffreitas.rafinha" target=“_blank” class="botao_circulo" id="facebook"></a>
 				<a  href="https://www.instagram.com/rafinha_ff/" target=“_blank” class="botao_circulo" id="instagram"></a>
@@ -81,13 +83,13 @@
 				<p>rafa1045.rf@gmail.com</p>
 				<div id="form">
 					<form name="formulario" action="" method="post">
-						<input class="tamanho-caixa" type=text name="nome" size="45" placeholder=" Nome" >
-						<input class="tamanho-caixa" type=text name="email" size="45" placeholder=" Email">
-						<input class="tamanho-caixa" type=text name="assunto" size="45" placeholder=" Assunto">
-						<textarea name="Mensagem" rows="10" cols="60" wrap="virtual" placeholder=" Mensagem"></textarea>
+						<input class="tamanho-caixa" type=text id="input_nome" size="45" placeholder=" Nome" >
+						<input class="tamanho-caixa" type=text id="input_email" size="45" placeholder=" Email">
+						<input class="tamanho-caixa" type=text id="input_assunto" size="45" placeholder=" Assunto">
+						<textarea id="input_mensagem" rows="10" cols="60" wrap="virtual" placeholder=" Mensagem"></textarea>
 						<div>
 							<br>
-							<input type="submit" class="botao_form" id="enviar" value="Enviar">
+							<input type="button" class="botao_form" id="enviar" value="Enviar">
 							<input type="reset" class="botao_form" id="limpar" value=" Limpar">
 						</div>
 					</form>

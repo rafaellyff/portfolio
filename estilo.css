@@ -387,3 +387,21 @@ input[type=text]::placeholder, textarea::placeholder {
     background-color: #e72f57;
     color: white;
 }
+
+/*GALERIA*/
+
+.galeria{
+	margin-top: 300px;
+	text-align: center; 
+	width: 90%;
+	margin-left: 5%;
+	color: #70172a;
+}
+
+.galeria2{
+	margin-top: 200px;
+	text-align: center; 
+	width: 90%;
+	margin-left: 5%;
+	color: #70172a;
+}
